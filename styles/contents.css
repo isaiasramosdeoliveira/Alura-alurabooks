@@ -1,0 +1,92 @@
+@import "global.css";
+
+header, main, aside{
+    border: 1px solid;
+}
+.navbar{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr;
+}
+.navbar-logo, .navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-logo .logo{
+    justify-content: center;
+    width: 50px;
+}
+.nav-links .links-link img{
+    cursor: pointer;
+    width: 25px;
+}
+.navbar-nav .nav-links{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navbar .container:nth-child(2) .nav-links .links-link:nth-child(1) {
+    cursor: pointer;
+    font-size: 1.6em;
+    color: azure;
+    font-weight: 600;
+}
+.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button{
+    cursor: pointer;
+    background-color: var(--corPrimary-3);
+    padding: 4% 10%;
+    width: 150px;
+    white-space: nowrap;
+    border: none;
+    border-radius: 50px;
+    color: azure;
+}.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button:hover{
+    transition: all;
+    transition-duration: 200ms;
+    background-color: #4226bc;
+}
+.navbar .container:nth-child(2){
+    justify-content: space-between;
+    padding: 0px 4%;
+}
+.navbar .container:nth-child(2) .nav-links{
+    justify-content: space-between;
+}
+.navbar .container:nth-child(3) .nav-links {
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu{
+    grid-row: 2;
+}
+.menu .menu-nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+.menu .menu-nav .nav-links{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20%;
+}
+.menu .menu-nav .nav-links .links-link{
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.menu .menu-nav .nav-links .links-link img{
+    width: 25px;
+}
+
+
+.content{
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--corPrimary-2);
+    grid-row: 2;
+}
+.baseboard{
+    background-color: orangered;
+}
