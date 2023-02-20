@@ -1,7 +1,6 @@
 @import "global.css";
 
 header, main, aside{
-    border: 1px solid;
 }
 .navbar{
     grid-column: 1/4;
@@ -19,7 +18,7 @@ header, main, aside{
 }
 .nav-links .links-link img{
     cursor: pointer;
-    width: 25px;
+    width: 30px;
 }
 .navbar-nav .nav-links{
     display: flex;
@@ -32,7 +31,7 @@ header, main, aside{
     color: azure;
     font-weight: 600;
 }
-.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button{
+.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button, .content-books .book button{
     cursor: pointer;
     background-color: var(--corPrimary-3);
     padding: 4% 10%;
@@ -41,7 +40,8 @@ header, main, aside{
     border: none;
     border-radius: 50px;
     color: azure;
-}.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button:hover{
+}.navbar .container:nth-child(2) .nav-links .links-link:nth-child(2) .links-button:hover, .links-button,
+.content-books .book button:hover{
     transition: all;
     transition-duration: 200ms;
     background-color: #4226bc;
@@ -57,6 +57,8 @@ header, main, aside{
     justify-content: center;
     gap: 40px;
 }
+
+/* menu da esquerda */
 
 .menu{
     grid-row: 2;
@@ -78,15 +80,107 @@ header, main, aside{
     margin: 20px 0px;
 }
 .menu .menu-nav .nav-links .links-link img{
-    width: 25px;
+    width: 30px;
 }
 
 
+/* Conteúdo da página */
+
 .content{
+    overflow-y: auto;
     border-radius: 10px 10px 0px 0px;
     background-color: var(--corPrimary-2);
     grid-row: 2;
 }
-.baseboard{
-    background-color: orangered;
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+.content .container:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content-btns{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    width: 66.6%;
+    padding: 2%;
+    background-color: var(--corPrimary-2);
+    flex-grow: 1;
+    gap: 4%;
+}
+.content-btns .btns-button{
+    cursor: pointer;
+    background-color: var(--corPrimary-1);
+    padding: 1.5% 4%;
+    color: var(--letter);
+    border-radius: 50px;
+    width: 125px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+.content-btns .btns-button:hover{
+    background-color: #3f3f3f;
+}
+.content-books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 2%;
+    gap: 20px;
+    overflow-y: auto;
+}
+.content-books .book{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--corPrimary-1);
+    border-radius: 10px;
+    flex-grow: 1;
+    padding: 2%;
+    max-width: 380px;
+}
+.content-books .book .describe{
+    width: 50%;
+}
+.content-books .book img{
+    max-width: 150px;
+}
+.container .book button{
+    margin-top: 10px;
+    padding: 2% 0%;
+    display: block;
+}
+.container .book h4{
+    font-size: 1em;
+}
+.container .book span {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: rgb(166, 146, 252);
+    margin: 2% 0;
+}
+
+/* menu da direita */
+
+.menu .menu-profile, .menu-seach{
+    display: grid;
+    padding: 10% 4%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.menu .menu-profile img{
+    justify-self: center;
+    width: 100px;
 }

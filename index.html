@@ -1,64 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AluraBooks</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/contents.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/contents.css" />
+  </head>
+  <body>
     <header class="navbar">
-        <picture class="container navbar-logo">
-            <img class="logo" src="img/shield.png" alt="ícone da página">
-        </picture>
-        <nav class="container navbar-nav">
-            <ul class="nav-links">
-                <li class="links-link">Leads</li>
-                <li class="links-link">
-                    <button class="links-button">Add a new lead</button>
-                </li>
-            </ul>
-        </nav>
-        <nav class="container navbar-nav">
-            <ul class="nav-links">
-                <li class="links-link">
-                    <img src="img/search.png" alt="ícone de busca">
-                </li>
-                <li class="links-link">
-                    <img src="img/bell.png" alt="ícone de notificação">
-                </li>
-            </ul>
-        </nav>
+      <picture class="container navbar-logo">
+        <img class="logo" src="img/shield.png" alt="ícone da página" />
+      </picture>
+      <nav class="container navbar-nav">
+        <ul class="nav-links">
+          <li class="links-link">Leads</li>
+          <li class="links-link">
+            <button class="links-button">Add a new lead</button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="container navbar-nav">
+        <ul class="nav-links">
+          <li class="links-link">
+            <img src="img/search.png" alt="ícone de busca" />
+          </li>
+          <li class="links-link">
+            <img src="img/bell.png" alt="ícone de notificação" />
+          </li>
+        </ul>
+      </nav>
     </header>
     <aside class="menu">
-        <nav class="container menu-nav">
-            <ul class="nav-links">
-                <li class="links-link">
-                    <img src="img/apps.png" alt="ícone de aplicativos">
-                </li>
-                <li class="links-link">
-                    <img src="img/arrow.png" alt="ícone de status">
-                </li>
-                <li class="links-link">
-                    <img src="img/calendar.png" alt="ícone de calendário">
-                </li>
-                <li class="links-link">
-                    <img src="img/user.png" alt="ícone de usuário">
-                </li>
-                <li class="links-link">
-                    <img src="img/dollar.png" alt="ícone do dolár">
-                </li>
-            </ul>
-        </nav>
+      <nav class="container menu-nav">
+        <ul class="nav-links">
+          <li class="links-link">
+            <img src="img/apps.png" alt="ícone de aplicativos" />
+          </li>
+          <li class="links-link">
+            <img src="img/arrow.png" alt="ícone de status" />
+          </li>
+          <li class="links-link">
+            <img src="img/calendar.png" alt="ícone de calendário" />
+          </li>
+          <li class="links-link">
+            <img src="img/user.png" alt="ícone de usuário" />
+          </li>
+          <li class="links-link">
+            <img src="img/dollar.png" alt="ícone do dolár" />
+          </li>
+        </ul>
+      </nav>
     </aside>
     <main class="content">
-        content
+      <section class="container content-btns">
+        <button data-type="front-end" class="btns-button">Front-end</button>
+        <button data-type="back-end" class="btns-button">Back-end</button>
+        <button data-type="dados" class="btns-button">Dados</button>
+        <button data-type="disponivel" class="btns-button">Disponíveis</button>
+        <button data-type="preco" class="btns-button">Por preço</button>
+      </section>
+      <section class="container content-books">
+        
+      </section>
     </main>
     <aside class="menu">
-        menu
+      <div class="menu-profile">
+        <img src="img/profile.png" alt="foto de perfil" />
+        <h2>Hello,<span> Isaías</span></h2>
+      </div>
     </aside>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
