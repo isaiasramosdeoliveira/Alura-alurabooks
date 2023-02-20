@@ -104,6 +104,7 @@ header, main, aside{
 }
 
 .content-btns{
+    z-index: 1;
     position: fixed;
     display: flex;
     align-items: center;
@@ -150,6 +151,9 @@ header, main, aside{
     padding: 2%;
     max-width: 380px;
 }
+.disabled img{
+    opacity: 15%;
+}
 .content-books .book .describe{
     width: 50%;
 }
@@ -179,6 +183,19 @@ header, main, aside{
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+.menu .menu-profile .block{
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    padding: 10px;
+}
+.menu .menu-profile p{
+    text-align: center;
+}
+.menu .menu-profile p:last-child{
+    color: azure;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 .menu .menu-profile img{
     justify-self: center;
